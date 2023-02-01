@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+      .container{
+          height: 500px;
+          display: grid;
+          grid-template-columns:repeat(3,1fr);
+          gap: 4px;
+          /* border: 2px solid black; */
+          /* grid-template-rows:repeat(3,200px); */
+
+      }
+      .box{
+          /* height: 200px;
+          width: 300px; */
+      }
+     .box1{
+         background-color: red;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 200px;
+     }
+     .box2{
+         background-color: blue;
+         height: 100px;
+     }
+     .box3{
+         background-color:green;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          grid-column-start: 3;
+          height: 200px;
+        }
+
+     .box4{
+         background-color: yellow;
+         height: 300px;
+        
+         grid-row-start: 2;
+         grid-row-end: 5;
+         grid-column-start:2;
+     }
+     .box5{
+         background-color: orange;
+         height: 100px;
+     }
+     .box6{
+         background-color: purple;
+         height: 100px;
+     }
+     .box7{
+         background-color: lemonchiffon;
+         grid-row-start: 4;
+         grid-row-end: 6;
+         grid-column-start: 1;
+         height: 200px;
+     }
+     .box8{
+         background-color: pink;
+         height: 100px;
+     }
+     .box9{
+         background-color: brown;
+         grid-row-start: 4;
+         grid-row-end: 6;
+         grid-column-start: 3;
+         height: 200px;    
+        }
+
+   .heading{
+       text-align: center;
+       text-decoration: underline;
+       font-weight: bolder;
+       color: darkblue;
+    
+       
+   }
+
+   
+
+   .img{
+     
+     width: 100%;
+     height: 100%; 
+     background-size: cover;
+     /* border: 3px solid black; */
+     overflow: hidden;
+        
+    }
+    @media (max-width: 500px) {
+     .img{   
+     width: 100%;
+     height: 100%; 
+     background-size: cover;
+     /* border: 3px solid black; */
+     overflow: hidden;
+     }
+}
+  </style>
+</head>
+<body>
+  <!-- grid album -->
+
+  <h1 class="heading">IMAGE GALLERY</h1>
+  <div class="container">
+      <div class="box box1">
+          <img src="https://images.pexels.com/photos/7500307/pexels-photo-7500307.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="No image" class="img">
+      </div>
+
+      <div class="box box2"><img src="https://images.pexels.com/photos/14726376/pexels-photo-14726376.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="no img" class="img "></div>
+      
+      <div class="box box3">
+        <img src="https://images.pexels.com/photos/9074921/pexels-photo-9074921.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="no img" class="img ">   
+      </div>
+
+      <div class="box box4">
+        <img src="https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> 
+      </div>
+
+      <div class="box box5">
+        <img src="https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> 
+      </div>
+      <div class="box box6">
+        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> 
+      </div>
+      <div class="box box7">
+        <img src="https://images.pexels.com/photos/5935788/pexels-photo-5935788.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> 
+      </div>
+      <div class="box box8"> <img src="https://images.pexels.com/photos/7172094/pexels-photo-7172094.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> </div>
+      <div class="box box9"> <img src="https://images.pexels.com/photos/10050584/pexels-photo-10050584.jpeg?auto=compress&cs=tinysrgb&w=300" alt="no img" class="img "> </div>
+    
+      
+
+
+  </div>
+</body>
+</html>
